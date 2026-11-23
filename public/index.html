@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <title>REX AI</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="mark">R</span><div><b>REX AI</b><small>YOUR AI COMPANION</small></div></div>
+      <button id="newChat" class="new-chat">＋ New chat</button>
+      <div class="side-label">PERSONALIZE</div>
+      <label>Personality
+        <select id="personality">
+          <option>Helpful, clear, creative</option><option>Funny and casual</option>
+          <option>Thoughtful and analytical</option><option>Dramatic storyteller</option>
+          <option>Calm and mysterious</option>
+        </select>
+      </label>
+      <label>Voice
+        <select id="voice"></select>
+      </label>
+      <label>Voice style
+        <select id="voiceStyle">
+          <option value="normal">Natural</option><option value="slow">Calm / slower</option>
+          <option value="dramatic">Dramatic</option>
+        </select>
+      </label>
+      <p class="note">Available voices and accents depend on your phone and browser.</p>
+      <div class="side-bottom">REX AI · EARLY ACCESS</div>
+    </aside>
+    <main>
+      <header><button id="menu" aria-label="Menu">☰</button><span>REX AI</span><span class="status"><i></i> Ready</span></header>
+      <section id="chat" class="chat">
+        <div class="welcome" id="welcome">
+          <div class="orb">R</div><h1>What are we exploring today?</h1>
+          <p>Ask a question, build an idea, or start a story.</p>
+          <div class="suggestions">
+            <button>Help me create a game</button><button>Start a mythology story</button><button>Explain something difficult</button>
+          </div>
+        </div>
+      </section>
+      <form id="composer" class="composer">
+        <textarea id="message" rows="1" placeholder="Message REX AI..." autocomplete="off"></textarea>
+        <button type="button" id="mic" title="Speak">🎙</button>
+        <button type="submit" id="send" title="Send">➤</button>
+      </form>
+      <p class="disclaimer">REX AI can make mistakes. Check important information.</p>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body></html>
